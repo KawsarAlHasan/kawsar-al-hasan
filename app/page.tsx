@@ -4,6 +4,7 @@ import LoadingScreen from "./components/common/LoadingScreen";
 import { HeroSection } from "./components/sections/hero";
 import { ExperienceSection } from "./components/sections/experience";
 import { AboutSection } from "./components/sections/about";
+import { SkillsSection } from "./components/sections/skills";
 
 export default function HomePage() {
   const [loaded, setLoaded] = useState(false);
@@ -22,9 +23,21 @@ export default function HomePage() {
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
+         <SkillsSection />
         {/* ── Future sections go here ──────────────────────────
+
+
+1. HeroSection
+2. AboutSection
+3. ExperienceSection
+4. ProjectsSection
+5. SkillsSection
+6. EducationSection
+7. TestimonialsSection
+8. ContactSection
+
         <ProjectsSection />
-        <SkillsSection />
+       
         <EducationSection />
         <TestimonialsSection />
         <ContactSection />
