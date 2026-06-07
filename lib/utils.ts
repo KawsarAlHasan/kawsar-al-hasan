@@ -1,0 +1,11 @@
+// ============================================================
+// lib/utils.ts
+// Utility helpers — cn() merges Tailwind classes safely
+// ============================================================
+
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
